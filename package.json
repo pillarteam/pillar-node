@@ -1,0 +1,23 @@
+{
+  "name": "pillar-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillarteam/pillar-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pillarteam/pillar-node/issues"
+  },
+  "homepage": "https://github.com/pillarteam/pillar-node#readme",
+  "dependencies": {
+    "lotion": "^0.1.12",
+    "pillar-lib": "git+https://github.com/pillarteam/pillar-lib.git"
+  }
+}
