@@ -25,19 +25,20 @@ class Pillar {
           supply: 20,
           votePrices: {},
           stakedAmount: {},
-          lastVoteWindow: 0,
+          lastVoteWindow: Math.floor(Date.now() / 1000),
           finalPrice: 0
       },
+
       // logTendermint: true,
       createEmptyBlocks: true,
-      devMode: true
+      devMode: false
     })
 
     this.app.use(pillars())
   }
 
   async init () {
-    return await this.app.listen(3000)
+    return await this.app.start()
   }
 
 }
